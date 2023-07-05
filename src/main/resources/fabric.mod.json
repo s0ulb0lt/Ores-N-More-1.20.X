@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "oresnmore",
+	"version": "${version}",
+	"name": "Ores N More",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"s0ulb0lt"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/oresnmore/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.soulbolt.oresnmore.OresNMore"
+		],
+		"fabric-datagen": [
+			"net.soulbolt.oresnmore.OresNMoreDataGenerator"
+		],
+		"client": [
+			"net.soulbolt.oresnmore.OresNMoreClient"
+		]
+	},
+	"mixins": [
+		"oresnmore.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
